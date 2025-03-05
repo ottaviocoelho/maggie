@@ -1,0 +1,11 @@
+html {
+  
+  /* Calendar Vars */
+  --calendar-date-size: 160px;
+  --calendar-columns-number: 7;
+  --calendar-rows-number: 6;
+
+  /* Shadow Vars */
+  --shadow-dark-color: #dedede;
+  --shadow-highlight-color: #fefefd;
+}
