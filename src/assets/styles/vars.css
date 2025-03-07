@@ -1,11 +1,18 @@
 html {
+
+  --background-color: #E3EDF6;
   
   /* Calendar Vars */
   --calendar-date-size: 160px;
   --calendar-columns-number: 7;
   --calendar-rows-number: 6;
+  --calendar-gap-size: 3px;
 
   /* Shadow Vars */
-  --shadow-dark-color: #dedede;
+  --shadow-dark-color: #C0D2E5;
   --shadow-highlight-color: #fefefd;
+
+  --no-shadow-overwrite: 0px 0px 15px -50px transparent, 0px 0px 15px -50px transparent;
+  --shadow-md: 6px 6px 15px -5px var(--shadow-dark-color), -6px -6px 15px -5px var(--shadow-highlight-color);
+  --shadow-md-inset: inset 3px 3px 10px -3px var(--shadow-dark-color);
 }
