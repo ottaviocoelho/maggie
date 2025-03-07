@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   
   background-color: var(--background-color);
+  padding-bottom: 120px;
 }
 
 a {
