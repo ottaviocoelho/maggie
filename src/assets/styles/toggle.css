@@ -1,0 +1,45 @@
+/* Toggle Thumb Size: 16px */
+/* Padding Size: 5px */
+/* Total Size on Toggle: 26px = 16 + 5 + 5 */
+
+.toggle {
+  width: 52px;
+  height: 26px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+
+  background-color: transparent;
+  box-shadow: var(--shadow-md-inset);
+
+  border-radius: 13px;
+	transition: all 0.3s ease-in-out;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-bg-inset);
+}
+
+.toggle-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #A9BACC;
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.toggle:hover .toggle-thumb {
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle[aria-pressed="true"] .toggle-thumb {
+  left: 31px; 
+  background-color: #1F6DCE;
+}

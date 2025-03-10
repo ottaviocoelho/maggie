@@ -29,3 +29,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+#root {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

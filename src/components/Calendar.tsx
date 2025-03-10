@@ -1,3 +1,4 @@
+import '../assets/styles/calendar.css'
 import { useState } from "react"
 import { CalendarDate } from "../types/Calendar"
 import CalendarDay from "./CalendarDay"
@@ -18,6 +19,10 @@ function Calendar({dates}: Props) {
         }
     }
 
+    const today = new Date();
+  
+    const isToday = (date: CalendarDate) => date.day == today.getDate() && date.month == today.getMonth() && date.year == today.getFullYear()
+
     return (
         <section className='calendar-wrapper'>
           <div className='calendar' style={{
@@ -33,7 +38,7 @@ function Calendar({dates}: Props) {
                       calendarRow.map((calendarDate, columnIndex) => {
                         const isFocused = focus?.columnIndex == columnIndex && focus?.rowIndex == rowIndex
           
-                        return <CalendarDay date={calendarDate} isFocused={isFocused} onClickHandler={() => onDayClick(rowIndex, columnIndex)} />
+                        return <CalendarDay date={calendarDate} isFocused={isFocused} isToday={isToday(calendarDate)} onClickHandler={() => onDayClick(rowIndex, columnIndex)} />
                       })
                     }
                   </div>

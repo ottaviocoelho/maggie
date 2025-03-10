@@ -28,6 +28,11 @@ html {
   --shadow-highlight-color: #fefefd;
 
   --no-shadow-overwrite: 0px 0px 15px -50px transparent, 0px 0px 15px -50px transparent;
+
+  --shadow-sm: 1px 1px 3px 1px var(--shadow-dark-color), -1px -1px 3px 1px var(--shadow-highlight-color);
   --shadow-md: 6px 6px 15px -5px var(--shadow-dark-color), -6px -6px 15px -5px var(--shadow-highlight-color);
+  --shadow-bg: 6px 6px 20px 0px var(--shadow-dark-color), -6px -6px 20px 0px var(--shadow-highlight-color);
+
   --shadow-md-inset: inset 3px 3px 10px -3px var(--shadow-dark-color);
+  --shadow-bg-inset: inset 3px 3px 5px 2px var(--shadow-dark-color);
 }
